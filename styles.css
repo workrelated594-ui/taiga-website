@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #444;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0b3d2e;
+    padding: 15px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 55px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #cce5dd;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.btn {
+    background: #0b3d2e;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #145c45;
+}
+
+/* GRID */
+.grid-4, .grid-3 {
+    display: grid;
+    gap: 30px;
+}
+
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* PROCESS */
+.process .step {
+    background: #fff;
+    padding: 25px;
+    border-left: 4px solid #0b3d2e;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+    background: #0b3d2e;
+    color: white;
+    text-align: center;
+    padding: 60px 8%;
+}
+
+/* PAGE HEADER */
+.page-header {
+    text-align: center;
+    padding: 60px 8%;
+    background: #eef3f1;
+}
+
+/* CONTACT */
+.contact-form form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius:
